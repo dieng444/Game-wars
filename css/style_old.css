@@ -1,0 +1,197 @@
+/*container principale*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+    background: url('../img/fond.jpg') no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    font-family: Open Sans, sans-serif;
+}
+#block-body {
+    //background-color: blue;
+    width:90%;
+    margin:auto;
+    //border:1px solid #000;
+    position: relative;
+    padding-bottom:200px;
+    margin-top:15px;
+}
+/*container du jeu  */
+#game-container {
+    //width:649px;
+    width:520px;
+    margin:auto;
+    margin-top:10px;
+}
+/*style pour les lignes  */
+.row {
+    //height: 63px;
+    height: 50px;
+    width: 650px;
+    display:flex;   /*http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html*/
+    flex-wrap:wrap;
+}
+/*style pour les cases  */
+.box {
+    //height: 62px;
+    //width: 63px;
+    height: 50px;
+    width: 50px;
+    //background-color: red;
+    //background:url("../img/sol.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    border:1px solid #000;
+}
+#player1-space
+{
+    border : 1px solid #000;
+    //background-color: blue;
+    float:left;
+    margin-left:30px;
+}
+#player2-space
+{
+    border : 1px solid #000;
+    //background-color: red;
+    /* position: absolute;
+    right: 0;
+    top:0;     */
+    float:right;
+    margin-right: 30px; 
+
+} 
+.players{
+    height: 220px;
+    //width: 300px;
+    width:230px;
+    margin-top: 56px;   
+    background:url("../img/background2.jpg");
+    color: white ; 
+    text-shadow:1px 3px 1px #000;
+    font-weight: bold; 
+    font-family: open sans, sans-serif;
+    box-shadow: 1px 5px 3px #000;                  
+}
+.players h2{
+    border:1px solid #fff;
+    padding: 1em;
+    text-align: center;
+    width:25%;
+    margin: auto;
+    background-color: #ddd;
+    margin-top:-26px;
+    margin-bottom:10px;
+    background: rgba(0,0,0,0.4);
+}
+
+button#menu
+{
+    background-color: #000;
+    width:300px;
+    //height:30px;
+    margin:auto;
+    display:block;
+    //float:right;
+    color: #fff; 
+    text-shadow:1px 3px 1px #000;
+    font-weight: bold;
+    font-size:1.1em;
+    border:none;
+    padding:20px;
+    background:url("../img/backgroundreplay.jpg");
+    cursor: pointer;
+}
+.gun-space {
+    width:17%;
+    //background-color: green;
+    //position:absolute;
+    //left:0;
+    //bottom:0;
+    //border: 1px solid #000;
+    background:url("../img/attaque-defendre.jpg");
+    box-shadow: 1px 5px 3px #000; 
+}
+.gun-space figure {
+    width:100px;
+}
+.gun-space figure img {
+    width:100%;
+    display:block;
+    height: auto;
+}
+.gun-space-content {
+    width:80%;
+    margin:auto;
+    display:flex;
+    padding:1em;
+}
+#space-two {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#space-one {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#activity-area {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    height: 110px;
+    left: 242px;
+    position: absolute;
+    width: 57.9%;
+}
+#activity-area p {
+    text-align:center;
+    font-size: 1.3em;
+    margin-top:43px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+.info-space {
+    height: 87px;
+    display:flex;
+}
+.info-space figure {
+    width:82px;
+    margin:0;
+}
+/*Pour adapter l'image à son conteneur parent*/
+.info-space figure img{
+    width:100%;
+    display:block;
+    height: auto;
+}
+.info-space .info {
+    margin-left:10px;
+    line-height: 1.5;
+}
+/*#player2-info figure {
+    width: 75px;
+}*/
+#player2-gun-side figure {
+    margin-top: 10px;
+}
+#player1-attaquer, #player2-attaquer{
+    margin-right: 30px;
+}
+
+

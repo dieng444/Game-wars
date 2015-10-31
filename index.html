@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My game wars</title>
+        <!-- <script type="text/javascript" src="app.js"></script> -->
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/functions.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/fight.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/weapon.js"></script>
+        <script type="text/javascript" src="js/interface.js"></script>
+        <script type="text/javascript" src="js/players.js"></script>
+        <script type="text/javascript" src="js/application.js"></script>
+    </head>
+    <body>
+        <div id ="popup">
+            <div id="content">
+                <figure id="popup-img"><img src="img/game-over1.jpg"/></figure>
+                <div id="popup-content">
+                    <h2>Récapitulatif</h2>
+                    <div id="game-info"> </div>    
+                </div>
+                <div id="close" title="Fermer">[X]</div>
+                <div id="after-optn">
+                     <button id="leave">Quitter</button>
+                </div>
+            </div>
+        </div>
+        <div id="info-popup">
+            <div id="info-content">
+                <p id="info-popup-text"> </p>
+            </div>
+        </div>
+        <div id="cross-popup">
+            <div class="content">
+                <figure id="cross-popup-img"><img src="img/croix.png"/></figure>
+            </div>
+        </div>
+        <div id="block-body">
+            <div id="player1-space" class="players">
+                <div class="player-content">
+                    <h2>Joueur 1</h2>
+                    <div id="player1-info" class="info-space">
+                         <figure><img alt="player1-img" id="player1-profil-img"></figure>
+                         <div id="player1-info" class="info">
+                            <p>Nom : <span id="player1-name"></span> <br> Point de vie : <span id="player1-life-point"></span></p>
+                         </div>
+                    </div>
+                    <div id="player1-gun-side" class="info-space">
+                         <figure><img alt="player1-gun-img" id="player1-weapon-visuel"></figure>
+                         <div id="player1-gun-info" class="info">
+                            <p>Nom : <span id="player1-weapon-name"></span> <br> Dégât : <span id="player1-degat"></span></p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div id="player2-space" class="players">
+                 <div class="player-content">
+                    <h2>Joueur 2</h2>
+                    <div id="player2-info" class="info-space">
+                         <figure><img alt="player2-img" id="player2-profil-img"></figure>
+                         <div id="player2-info" class="info">
+                            <p>Nom : <span id="player2-name"></span> <br> Point de vie : <span id="player2-life-point"></span></p>
+                         </div>
+                    </div>
+                    <div id="player2-gun-side" class="info-space">
+                         <figure><img alt="player2-gun-img" id="player2-weapon-visuel"></figure>
+                         <div id="player2-gun-info" class="info">
+                            <p>Nom : <span id="player2-weapon-name"></span> <br> Dégât : <span id="player2-degat"></span></p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gun-space" id="space-one">
+                <div class="gun-space-content">
+                    <figure id="player1-attaquer"><img alt="attaque" src="img/attaque.png"></figure>
+                    <figure id="player1-defendre"><img alt="defendre" src="img/defendre.png"></figure>
+                </div>
+            </div>
+            <div class="gun-space" id="space-two">
+                <div class="gun-space-content">
+                    <figure id="player2-attaquer"><img alt="attaque" src="img/attaque.png"></figure>
+                    <figure id="player2-defendre"><img alt="defendre" src="img/defendre.png"></figure>
+                </div>
+            </div>
+            <div id="activity-area">
+                <p id="activity-area-content"></p>
+                <button type="button" id="menu">Replay</button>
+            </div>
+            
+            <div id="game-container">
+                
+            </div>
+        </div>
+    </body>
+</html>
