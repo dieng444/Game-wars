@@ -5,7 +5,7 @@ window.onload = function () {
 	map.init();
 	/******Création de interface****/
 	var interfaces = new Interface();
-	interfaces.lunchGame();
+	interfaces.launchGame();
 	/****Lancement du jeu******/
 	var game = new Game();
 	game.move();
@@ -28,13 +28,13 @@ window.onload = function () {
 		map.init();
 		/******Création d'une nouvelle interface****/
 		var interfaces = new Interface();
-		interfaces.lunchGame();
+		interfaces.launchGame();
 		/****Lancement du jeu à nouveau******/
 		var game = new Game();
 		game.move();
 
 	}
-	
+
 	/****Appelle de la fonction replay sur le button Le menu*******/
 	document.getElementById("menu").addEventListener('click', replay);
 	/****Fermeture du popup de gamevoer via le bouton <<Quitter>> ******/
@@ -47,5 +47,5 @@ window.onload = function () {
 		document.getElementById("popup").style.display = "none";
 		replay();//Réinitialisation du jeu, après la fermeture du popup
 	});
-	
+
 }
